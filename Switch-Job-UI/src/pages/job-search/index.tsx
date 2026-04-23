@@ -4,7 +4,6 @@ import BottomNav from '../../components/navigation/BottomNav';
 import SearchBar from '../../components/navigation/SearchBar';
 
 import Button from '../../components/ui/Button';
-import { Helmet } from 'react-helmet-async';
 import FilterPanel from './components/FilterPanel';
 import SortControls from './components/SortControls';
 import JobCardSkeleton from './components/JobCardSkeleton';
@@ -433,11 +432,9 @@ const JobSearch: React.FC = () => {
   };
 
   return (
-    <>
-      <Helmet>
-        <title>Job Search - JobAI Connect</title>
-        <meta name="description" content="Discover your dream job with AI-powered job matching. Browse thousands of opportunities with advanced filtering and personalized recommendations." />
-      </Helmet>
+  <>
+      <title>Job Search - JobAI Connect</title>
+      <meta name="description" content="Discover your dream job with AI-powered job matching. Browse thousands of opportunities with advanced filtering and personalized recommendations." />
       <Header />
       <BottomNav />
       <main className="main-content bg-background min-h-screen">

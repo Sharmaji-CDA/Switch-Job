@@ -131,8 +131,7 @@ const FilterPanel = ({ filters, onFilterChange }: FilterPanelProps) => {
           <Checkbox
             checked={filters?.topRatedOnly}
             onChange={(e) => handleFilterUpdate('topRatedOnly', e?.target?.checked)}
-            indeterminate={false}
-          />
+            indeterminate={false} label="Select"          />
           <span className="text-sm text-foreground">Top Rated Only</span>
         </label>
       </div>

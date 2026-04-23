@@ -82,8 +82,7 @@ const ApplicationTable = ({
                 <Checkbox
                   checked={selectedIds?.length === applications?.length && applications?.length > 0}
                   indeterminate={selectedIds?.length > 0 && selectedIds?.length < applications?.length}
-                  onChange={(e) => handleSelectAll(e?.target?.checked)}
-                />
+                  onChange={(e) => handleSelectAll(e?.target?.checked)} label={undefined}                />
               </th>
               <th className="px-4 md:px-6 py-3 md:py-4 text-left">
                 <button
@@ -130,8 +129,7 @@ const ApplicationTable = ({
                   <Checkbox
                     checked={selectedIds?.includes(application?.id)}
                     onChange={(e) => handleSelectOne(application?.id, e?.target?.checked)}
-                    indeterminate={false}
-                  />
+                    indeterminate={false} label=""                  />
                 </td>
                 <td className="px-4 md:px-6 py-3 md:py-4">
                   <div className="flex items-center gap-3">

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
-import { optimizeResume } from '../../../services/openaiservice';
+import { optimizeResume } from '../../../services/openaiService';
 
 interface ResumeOptimizerModalProps {
   onClose: () => void;
