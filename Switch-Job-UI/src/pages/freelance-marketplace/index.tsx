@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import Header from '../../components/navigation/Header';
 import BottomNav from '../../components/navigation/BottomNav';
 import SearchBar from '../../components/navigation/SearchBar';
@@ -236,10 +235,8 @@ const FreelanceMarketplace = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Freelance Marketplace - Find Top Talent | JobAI Connect</title>
-        <meta name="description" content="Discover and hire talented freelancers for your projects. Browse profiles, compare rates, and find the perfect match." />
-      </Helmet>
+      <title>Freelance Marketplace - Find Top Talent | JobAI Connect</title>
+      <meta name="description" content="Discover and hire talented freelancers for your projects. Browse profiles, compare rates, and find the perfect match." />
       <div className="min-h-screen bg-background">
         <Header />
         <SearchBar />

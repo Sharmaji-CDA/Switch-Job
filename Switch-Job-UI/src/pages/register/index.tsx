@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Icon from '../../components/AppIcon';
-import { Helmet } from 'react-helmet-async';
 import SubscriptionTierCard from './components/SubscriptionTierCard';
 import SocialSignupButton from './components/SocialSignupButton';
 import RegistrationForm, { type RegistrationFormData } from './components/RegistrationForm';
@@ -15,7 +14,7 @@ interface Tier {
 
 const Register: React.FC = () => {
   const [selectedTier, setSelectedTier] = useState<string>('free');
-  const [showSocialSignup, setShowSocialSignup] = useState<boolean>(true);
+  const [showSocialSignup,] = useState<boolean>(true);
 
   const subscriptionTiers: Tier[] = [
     {
@@ -64,10 +63,8 @@ const Register: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Create Account - JobAI Connect</title>
-        <meta name="description" content="Join JobAI Connect and unlock AI-powered job matching, career development tools, and connect with top recruiters." />
-      </Helmet>
+      <title>Create Account - JobAI Connect</title>
+      <meta name="description" content="Join JobAI Connect and unlock AI-powered job matching, career development tools, and connect with top recruiters." />
       <div className="min-h-screen bg-background">
         <div className="content-container py-8 md:py-12 lg:py-16">
           <div className="max-w-6xl mx-auto">
